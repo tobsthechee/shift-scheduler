@@ -1,7 +1,7 @@
 # Production environment #
 
 # Client side
-FROM node:16 AS frontend
+FROM node:18 AS frontend
 WORKDIR /usr/src/app/frontend/
 COPY frontend/package*.json ./
 RUN npm install
