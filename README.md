@@ -50,17 +50,17 @@ $ docker compose up
 Shift Scheduler uses MongoDB, you would have to connect to port `27018` with your favorite database management app to set up the first user (the port is purposely not 27017).
 Only administrators can create users for protection.
 
-Insert this first user document under the `users` collection:
+Insert this first user document under the `users` collection (MongoDB -> shift-scheduler -> Collections -> users):
 
 ```
 {
-    "_id" : ObjectId("6276688e8ac0526064fb3ade"),
-    "username" : "admin",
-    "hash" : "864bcf999790114b894299fbc5899cd5c998b3166e1deacc69096fb10b8eda84d2ff1c36637ad4679621b1c17ab3ee2260f6ef4f40c722a0528d645afaeeecce",
-    "salt" : "1322927e381826e0f7a6fa6ccf4ea81660301f4956ef889eef60e43a2c32065b",
-    "admin" : true,
-    "blockedDates" : [],
-    "__v" : 0
+"_id" : ObjectId("6276688e8ac0526064fb3ade"),
+"username" : "admin",
+"hash" : "864bcf999790114b894299fbc5899cd5c998b3166e1deacc69096fb10b8eda84d2ff1c36637ad4679621b1c17ab3ee2260f6ef4f40c722a0528d645afaeeecce",
+"salt" : "1322927e381826e0f7a6fa6ccf4ea81660301f4956ef889eef60e43a2c32065b",
+"admin" : true,
+"blockedDates" : [],
+"__v" : 0
 }
 ```
 
